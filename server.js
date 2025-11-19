@@ -18,6 +18,9 @@ const server = http.createServer((req, res) => {
       <body>
         <h1>Hello from AWS EC2 and GitHub!</h1>
         <p>This is a small interactive message demo.</p>
+        <img src="https://static.vecteezy.com/system/resources/previews/012/744/791/large_2x/cute-girl-working-on-computer-cartoon-icon-illustration-people-and-technology-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" 
+             alt="Cartoon girl working on computer" 
+             width="400" />
       </body>
     </html>
   `);
