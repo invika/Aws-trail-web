@@ -1,4 +1,4 @@
-# AWS Trial Node.js App
+# AWS Trail Node.js App
 
 A simple Node.js server that serves a basic HTML page and displays a pop-up message. This project is designed for learning GitHub deployment and AWS hosting.
 
