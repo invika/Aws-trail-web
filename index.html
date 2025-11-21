@@ -6,24 +6,24 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        color: purple;
+        overflow: hidden; /* so bows don't create scrollbars */
       }
 
       header {
-        background-color: brown;
+        background-color: purple;
         color: white;
         padding: 20px;
         font-size: 24px;
-        text-align: center;   /* centers header text */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;   /* centers horizontally */
-        justify-content: center; /* centers vertically */
-        min-height: calc(100vh - 80px); /* full height minus header */
+        width: 100%;
         text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       }
 
       .image-box {
@@ -33,20 +33,47 @@
         border-radius: 8px;
         margin-top: 20px;
       }
+
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: purple;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+
+      button:hover {
+        background-color: #5a007a;
+      }
+
+      /* Bows that fall */
+      .bow {
+        position: fixed;
+        top: -50px;
+        font-size: 40px;
+        animation: fall 3s linear forwards;
+      }
+
+      @keyframes fall {
+        from { transform: translateY(-50px); }
+        to { transform: translateY(110vh); }
+      }
     </style>
   </head>
   <body>
-    <header>My AWS Trial Site</header>
+    <header>My AWS Trail Site</header>
 
-    <div class="content">
-      <h2>Hello from <i>Invi's</i> AWS EC2 and GitHub!</h2>
-      <p>⇒ This is a small interactive message demo.</p>
+    <h2>Hello from <i>Invi's</i> AWS EC2 and GitHub!</h2>
+    <p>This is a small interactive message demo.</p>
 
-      <div class="image-box">
-        <img src="https://static.vecteezy.com/system/resources/previews/012/744/791/large_2x/cute-girl-working-on-computer-cartoon-icon-illustration-people-and-technology-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" 
-             alt="Cartoon girl working on computer" 
-             width="400" />
-      </div>
+    <div class="image-box">
+      <img src="https://static.vecteezy.com/system/resources/previews/012/744/791/large_2x/cute-girl-working-on-computer-cartoon-icon-illustration-people-and-technology-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" 
+           alt="Cartoon girl working on computer" 
+           width="400" />
     </div>
+
   </body>
 </html>
